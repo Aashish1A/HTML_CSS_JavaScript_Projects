@@ -1,0 +1,114 @@
+@media  screen and (max-width: 991px) {
+    h3{
+        font-size: 1.2rem;
+    }
+
+     .nav-toggle{
+        display: block;
+        margin-right: 20px;
+     }
+
+     .nav-links{
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-in-out;
+     }
+
+     .nav-links.active{
+        left: 0%;
+     }
+
+     .nav-links ul{
+        flex-direction: column;
+     }
+
+     .main-nav{
+        overflow: initial;
+     }
+
+     .examples-card{
+        width: calc(50% - 10px);
+        height: 180px;
+     }
+
+     .examples-area{
+        gap: 20px;
+     }
+
+     .cta-section{
+        padding-block: 60px;
+     }
+
+     .features-area{
+        gap: 20px;
+     }
+    
+}
+
+@media  screen and (max-width: 767px) {
+    h1{
+        font-size: 2rem;
+    }
+    .header-section{
+        flex-direction: column-reverse;
+    }
+
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .primary-button{
+        width: 100%;
+    }
+
+    .features-card{
+        min-width: calc(50% - 10px);
+    }
+
+    .big-feature-container{
+        flex-direction: column;
+    }
+
+    .second{
+        flex-direction: column-reverse;
+    }
+
+    .footer-container{
+        flex-direction: column;
+       align-items: center;
+       gap: 40px;
+       text-align: center;
+    }
+
+    .link-column{
+        align-items: stretch;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    :root{
+        --padding-inline-section: 20px;
+    }
+
+    .features-card{
+        min-width: 100%;
+    }
+
+    .examples-card{
+        min-width: 100%;
+    }
+}

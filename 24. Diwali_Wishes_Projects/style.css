@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.jhalar {
+    width: 220px;
+    margin-bottom: -200px;
+}
+
+.hero-section {
+    /* min-height: 100vh; */
+    background-color: #F99501;
+    background-image: url(/images/orange-backdrop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.audio-container{
+    margin-left: 16rem;
+    margin-top: -5rem;
+    background-color: #FBD8A4 ;
+    max-width: max-content;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "salsa";
+    /* padding-left: 20px; */
+}
+
+.hero-section pre{
+    font-size: 46px;
+    font-family: "salsa", cursive;
+    max-width: 400px;
+    margin-left: 10rem;
+}
+
+audio::-webkit-media-controls-enclosure {
+    background-color: #FBD8A4;
+}
+
+.middle-section {
+    background-color: #F99501;
+    display: flow-root;
+    padding-inline: 1em;
+}
+
+.laxmi-ganesha-img{
+    max-width: 900px;
+    width: 100%;
+    display: block;
+    margin-inline: auto;
+}
+
+.horizontal-line{
+    height: 3px;
+    width: 468px;
+    background-color: #FBD8A4;
+}
+.circle{
+    height: 10px;
+    width: 10px;
+    background-color: #FBD8A4;
+    border-radius: 100%;
+    flex-shrink: 0;
+}
+
+.horizontal-divider{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 810px;
+    margin-inline: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.middle-section h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Style Script", cursive;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+/* Box container  */
+.third-section {
+    background-color: #F99501;
+    display: flow-root;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.little-girl{
+    width: 260px;
+    margin-left: -5rem;
+}
+
+.box-container{
+    /* height: 553px; */
+    max-width: 500px;
+    background-color: white;
+    border-radius: 22px;
+    padding: 4rem;
+    /* display: inline-block; */
+}
+
+.box-container p{
+    font-family: "salsa";
+    font-size: 32px;
+    font-weight: 400;
+    /* width: 667.83px;
+    height: 173.12px; */
+}
+
+.box-container h3{
+    font-family: "salsa";
+    font-size: 32px;
+    font-weight: 400;
+    /* width: 668px;
+    height: 405px; */
+}
+
+/* footer section */
+.footer-section{
+    background-color: #F99501;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    margin-inline: auto;
+}
+
+.footer-section img{
+    max-width: 1500px;
+    width: 100%;
+    /* minheight: 700px; */
+    padding: 3.5rem 3rem 3rem;
+}
+
+/* footer sectioni */
+
+.footer{
+    background-color: #F99501;
+    display: flow-root;
+}
+.footer pre{
+    font-size: 24px;
+    font-family: "salsa";
+    padding-left: 2rem;
+}
+.footer h3{
+    font-size: 40px;
+    font-family: "Style Script";
+    padding-left: 2rem;
+}
+
+.footer p{
+    display: flex;
+    justify-content: flex-end;
+    font-family: "salsa";
+}
+
+@media (max-width: 840px){
+    .first-deepak{
+        display: block;
+        margin-left: auto;
+    }
+    .second-deepak, .soulful, .icon{
+        display: none;
+    }
+    .hero-section pre{
+        margin-left: -2rem;
+        font-size: 20px;
+    }
+    .jhalar {
+        margin-bottom: 0;
+    }
+    .audio-container{
+        margin: auto;
+        margin-left: 2px;
+    }
+
+    /* for third container */
+
+    .box-container p{
+        font-size: 1.25rem;
+    }
+    .box-container h3{
+        font-size: 1.25rem;
+    }
+    .little-girl{
+        max-width: 160px;
+    }
+    .box-container{
+        padding-block: 1rem;
+        padding-left: 2rem;
+    }
+
+    .footer h3{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 540px){
+    .hero-section pre{
+        font-size: 24px;
+    }
+    .first-deepak{
+        width: 100%;
+    }
+
+    .middle-section h2{
+        font-size: 32px;
+    }
+
+    /* for third section */
+
+    .box-container p{
+        font-size: 1rem;
+    }
+    .box-container h3{
+        font-size: 1rem;
+    }
+}

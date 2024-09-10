@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EDF2F8;
+    /* margin: 0; */
+}
+
+.box{
+    /* min-height: 250px; */
+    border-radius: 8px;
+}
+
+.container{
+    margin-inline: 2rem;
+    display: grid;
+    gap: 24px;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+    margin-inline: auto;
+    
+}
+
+.box-1{
+    background-color: #743EC8;
+}
+.box-1 img{
+    margin: 1rem;
+    border-radius: 100%;
+}
+.box-1 strong{
+    color: #FFFFFF;
+}
+.box-1 p{
+    color: rgba(255, 255, 255, 0.614);
+}
+.box-1 span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.paragraph{
+    padding: 1rem;
+}
+/* span .img-icon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+} */
+
+.box-2{
+    background-color: #49556B;
+}
+.box-2 img{
+    margin: 1rem;
+    border-radius: 100%;
+}
+.box-2 strong{
+    color: #FFFFFF;
+}
+.box-2 p{
+    color: rgba(255, 255, 255, 0.614);
+}
+.box-2 span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.paragraph{
+    padding: 1rem;
+}
+.box-3{
+    background-color: #FFFFFF;
+}
+.box-3 img{
+    margin: 1rem;
+    border-radius: 100%;
+}
+/* .box-3 strong{
+    color: #FFFFFF;
+} */
+/* .box-3 p{
+    color: rgba(255, 255, 255, 0.614);
+} */
+.box-3 span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.paragraph{
+    padding: 1rem;
+}
+.box-4{
+    background-color: white;
+}
+.box-4 img{
+    margin: 1rem;
+    border-radius: 100%;
+}
+
+.box-4 span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.paragraph{
+    padding: 1rem;
+}
+.box-5{
+    background-color: #18202D;
+}
+.box-5 img{
+    margin: 1rem;
+    border-radius: 100%;
+}
+.box-5 strong{
+    color: #FFFFFF;
+}
+.box-5 p{
+    color: rgba(255, 255, 255, 0.614);
+}
+.box-5 span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.paragraph{
+    padding: 1rem;
+}
+
+@media (min-width: 720px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .box-1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .box-3{
+        /* grid-column-start: 2;
+        grid-row-start: 2;
+        grid-row-end: 4; */
+        grid-row-start: span 2;
+    }
+    .box-5{
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+        grid-column-start: span 2;
+    }
+}
+
+@media (min-width: 1000px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
