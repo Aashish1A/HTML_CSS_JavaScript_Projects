@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../../Downloads/notes-app-img/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "09. Notes_APP"
+	}
+}
