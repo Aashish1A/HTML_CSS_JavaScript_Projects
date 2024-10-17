@@ -11,18 +11,20 @@
   background-color: #4203a9;
   color: #fff;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .calculator {
   width: 100%;
   max-width: 600px;
-  margin-left: 10px;
-  margin-right: 5px;
-  margin-top: 40px;
+  margin: 40px auto;
+  text-align: center;
 }
 
 .calculator h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -31,53 +33,86 @@
 }
 
 .input-box {
-    margin-top: 40px;
-  padding: 40px 50px 40px;
+  margin-top: 20px;
+  padding: 20px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.3);
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .input-box input {
-  flex: 1;
-  margin-right: 20px;
-  padding: 20px 40px 20px 40px;
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 20px;
+  padding: 15px;
   border: 0;
   outline: 0;
   border-radius: 5px;
-  position: relative;
+  text-align: center;
 }
 
 .input-box button {
   background: #ffff76;
   border: 0;
   outline: 0;
-  padding: 20px 30px;
+  padding: 15px 30px;
   border-radius: 5px;
   font-weight: 500;
   color: #333;
   cursor: pointer;
 }
 
-.input-box input::-webkit-calendar-picker-indicator {
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: auto;
-  height: auto;
-  position: absolute;
-  background-position: calc(100% - 5px);
-  background-size: 30px;
-  cursor: pointer;
-}
-
 #result {
-  font-size: 20px;
-  margin-top: 40px;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 #result span {
   color: #ffff76;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .calculator h1 {
+    font-size: 35px;
+  }
+
+  .input-box {
+    padding: 20px;
+  }
+
+  .input-box input {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .input-box button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculator h1 {
+    font-size: 30px;
+  }
+
+  .input-box {
+    padding: 10px;
+  }
+
+  .input-box input {
+    padding: 12px;
+  }
+
+  .input-box button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  #result {
+    font-size: 16px;
+  }
+}
+
