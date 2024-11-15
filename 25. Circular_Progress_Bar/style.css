@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e3edf7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill{
+    height: 160px;
+    width: 160px;
+    /* background-color: cornflowerblue; */
+    position: relative;
+}
+
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,00,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.inner{
+    height: 120px;
+    width: 120px;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,00,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#number{
+    font-weight: 600;
+    color: #555;
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: anim 2s linear forwards;
+}
+
+@keyframes anim {
+    100%{
+        stroke-dashoffset: 157.5 ;
+    }
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
